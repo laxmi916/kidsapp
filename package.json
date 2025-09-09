@@ -2,11 +2,11 @@
   "name": "groq-backend",
   "version": "1.0.0",
   "description": "Express backend using Groq API",
-  "main": "index.js",
+  "main": "server.js",          // <-- updated here
   "type": "module",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node server.js",  // <-- updated here
+    "dev": "nodemon server.js"  // <-- updated here
   },
   "dependencies": {
     "cors": "^2.8.5",
