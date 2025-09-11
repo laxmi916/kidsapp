@@ -14,7 +14,7 @@ const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 // 🔹 Utility: simple chat wrapper
 async function askGroq(prompt) {
   const chat = await groq.chat.completions.create({
-    model: "llama3-8b",   // you can change to other models
+    model: "llama-3.1-8b-instant",
     messages: [{ role: "user", content: prompt }],
     temperature: 0.7,
   });
