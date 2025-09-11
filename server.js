@@ -29,8 +29,8 @@ app.get("/", (req, res) => {
 // 📖 Story endpoint
 app.post("/story", async (req, res) => {
   const { age, topic } = req.body;
-  const prompt = `Write a short fun story (max 200 words) for a ${age}-year-old child about ${topic}. 
-  Use Indian names and simple English. Do not use * inside story.`;
+  const prompt = `Write a short fun story (max 200 words) for a ${age}-year-old indian child about ${topic}. 
+  Use simple English. Do not use * inside story.`;
 
   try {
     const story = await askGroq(prompt);
