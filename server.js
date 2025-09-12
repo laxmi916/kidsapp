@@ -16,7 +16,7 @@ async function askGroq(prompt) {
   const chat = await groq.chat.completions.create({
     model: "llama-3.1-8b-instant",
     messages: [{ role: "user", content: prompt }],
-    temperature: 0.7,
+    temperature: 0.8,
   });
   return chat.choices[0].message.content;
 }
