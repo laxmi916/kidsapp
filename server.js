@@ -105,7 +105,7 @@ app.post("/words", async (req, res) => {
 app.post("/math", async (req, res) => {
   const { age, operation } = req.body;
   const prompt = `
-  Generate 5 ${operation} math problems for a ${age}-year-old child.
+  Generate 5 ${operation} math problems for a ${age}-year-old child. if age below 8 give two and sigle digit problems. if age greater than 8 give problems based on 3 digit to 6 digit.
   Return ONLY valid JSON array:
   [
     {"question": "5 + 3 =", "answer": 8},
