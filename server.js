@@ -48,7 +48,7 @@ app.post("/quiz", async (req, res) => {
   Based on this story:
   "${story}"
 
-  Create 5 multiple-choice questions for kids.
+  Create 10 multiple-choice questions for kids.
   Each must have 4 options (A, B, C, D) and one correct answer.
   Return STRICT JSON only:
   {
