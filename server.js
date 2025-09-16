@@ -32,7 +32,7 @@ app.post("/story", async (req, res) => {
   /* const prompt = `Write a short fun story (max 200 words) for a ${age}-year-old indian child about ${topic}. 
   Use simple English. Do not use * inside story.`; */
 
-  const prompt = `create a lesson based on given  ${topic}.`;
+  const prompt = `create a lesson based on given  ${topic}. Do not use * inside lesson.`;
 
   try {
     const story = await askGroq(prompt);
